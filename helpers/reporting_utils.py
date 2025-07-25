@@ -63,7 +63,7 @@ def calculate_performance_metrics(strategy_returns, returns_df):
     
     return metrics
 
-def plot_performance_summary(strategy_returns, returns_df, metrics):
+def plot_performance_summary(strategy_returns, returns_df, metrics, save_png_path=None):
     """
     Plots the cumulative performance graph and displays the summary metrics table.
 
@@ -88,6 +88,14 @@ def plot_performance_summary(strategy_returns, returns_df, metrics):
     ax.set_ylabel('Cumulative Value (Log Scale)')
     ax.grid(True, which="both", linestyle='--', linewidth=0.5)
     ax.legend(title='Series', fontsize=10)
+    
+    if save_png_path:
+        try:
+            # Save the current figure to the specified path.
+            fig.savefig(save_png_path, dpi=150, bbox_inches='tight')
+            print(f"   Performance summary plot saved to {save_png_path}")
+        except Exception as e:
+            print(f"   Error saving PNG file: {e}")
     
     plt.show()
 
