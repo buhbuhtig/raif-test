@@ -74,7 +74,7 @@ To replicate the results, follow these steps:
 
 ### Prerequisites
 
--   Python 3.8+
+-   Python 3.10+
 -   Pip & a virtual environment manager (e.g., `venv`)
 
 ### Installation & Execution
@@ -100,6 +100,7 @@ To replicate the results, follow these steps:
     ```
 
 4.  **Run the backtest:**
+
     Option A: Open and run the main Jupyter Notebook (`research.ipynb`) from top to bottom. It will sequentially perform all data loading, analysis, and visualization.
 
     Option B: Alternatively, run the script run.py to execute the backtest logic programmatically (e.g. from terminal: python run.py).
