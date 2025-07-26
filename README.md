@@ -81,8 +81,8 @@ To replicate the results, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd <your-repo-name>
+    git clone https://github.com/buhbuhtig/raif-test
+    cd raif-test
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -100,7 +100,9 @@ To replicate the results, follow these steps:
     ```
 
 4.  **Run the backtest:**
-    Open and run the main Jupyter Notebook (`.ipynb`) from top to bottom. All data loading, analysis, and visualization will be executed sequentially.
+    Option A: Open and run the main Jupyter Notebook (`research.ipynb`) from top to bottom. It will sequentially perform all data loading, analysis, and visualization.
+
+    Option B: Alternatively, run the script run.py to execute the backtest logic programmatically (e.g. from terminal: python run.py).
 
 ## Dependencies
 
