@@ -49,10 +49,14 @@ print("   ...data loaded and aligned successfully.")
 
 # --- Stage 2: Patch SPX Data ---
 print("Stage 2: Patching SPX data holes...")
-create_spx_patch_file(
-    returns_df, patch_filename=patch_filename, force_creation=False)
-apply_spx_hole_patch(patch_filename, returns_df)
-print("   ...done.")
+try:
+    create_spx_patch_file(
+        returns_df, patch_filename=patch_filename, force_creation=False)
+    apply_spx_hole_patch(patch_filename, returns_df)
+except Exception as e:
+    print(f"   Warning: Failed to patch SPX data. The backtest will proceed with original data.")
+else:
+    print("   ...SPX data patched successfully.")
 
 # --- Stage 3: Identify Rebalancing Dates ---
 print("Stage 3: Identifying rebalancing dates...")
