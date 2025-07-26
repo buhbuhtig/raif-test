@@ -1,5 +1,5 @@
 
-# Quantitative Momentum Strategy with Dynamic Risk Control
+# Momentum Strategy with Dynamic Risk Control
 
 This repository contains a Python implementation of a long/short quantitative momentum strategy applied to the US equity market. The core of the strategy is based on the classic momentum factor defined by Jegadeesh and Titman (1993), enhanced with a dynamic risk management overlay inspired by Barroso and Santa-Clara (2015).
 
@@ -103,7 +103,7 @@ To replicate the results, follow these steps:
 
     **Option A**: Open and run the main Jupyter Notebook (`research.ipynb`) from top to bottom. It will sequentially perform all data loading, analysis, and visualization.
 
-    **Option B**: Alternatively, run the script run.py to execute the backtest logic programmatically (e.g. from terminal: python run.py).
+    Option B**: Alternatively, run the script run.py to execute the backtest logic programmatically (e.g. from terminal: python run.py).
 
 ## Dependencies
 

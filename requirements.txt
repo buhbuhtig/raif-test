@@ -1,8 +1,8 @@
-matplotlib==3.10.3
-numpy==2.2.6
-pandas==2.3.1
-pyarrow==21.0.0
-scipy==1.15.3
-statsmodels==0.14.5
-tqdm==4.67.1
-yfinance==0.2.65
+matplotlib
+numpy
+pandas
+pyarrow
+scipy
+statsmodels
+tqdm
+yfinance
