@@ -92,7 +92,7 @@ To replicate the results, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/buhbuhtig/raif-test
+    git clone https://github.com/buhbuhtig/raif-test.git
     cd raif-test
     ```
 
